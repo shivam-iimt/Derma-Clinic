@@ -13,6 +13,12 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* ⭐ CUSTOM CLINIC COLORS */
+  --color-primary: #1A4B84;
+  --color-primaryLight: #3E8CC7;
+  --color-primaryBg: #EAF4FB;
+  --color-textDark: #1F2D3D;
 }
 
 @media (prefers-color-scheme: dark) {

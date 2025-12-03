@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function AboutDoctor() {
   return (
-    <section className="w-full bg-gray-50 py-20">
+    <section className="w-full bg-primaryBg py-20">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
         {/* LEFT — Doctor Photo */}
         <motion.div
@@ -33,11 +33,11 @@ export default function AboutDoctor() {
           transition={{ duration: 0.6 }}
           className="space-y-6"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-700">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary">
             About Dr. Koshinder Vats
           </h2>
 
-          <p className="text-gray-700 text-lg leading-relaxed">
+          <p className="text-textDark text-lg leading-relaxed">
             <strong>Dr. Koshinder Vats (MBBS, MD)</strong> is a highly
             experienced dermatologist with over{" "}
             <strong>10+ years of expertise</strong> in treating skin, hair and
@@ -46,14 +46,14 @@ export default function AboutDoctor() {
             advanced cosmetic dermatology.
           </p>
 
-          <p className="text-gray-700 text-lg leading-relaxed">
+          <p className="text-textDark text-lg leading-relaxed">
             Dr. Vats has treated thousands of patients using modern dermatology
             techniques and US-FDA approved equipment. Known for ethical practice
             and accurate diagnosis, he provides safe, personalized and effective
             treatment solutions.
           </p>
 
-          <ul className="list-disc pl-5 text-gray-700 space-y-1">
+          <ul className="list-disc pl-5 text-textDark space-y-1">
             <li>Acne & Pimple Treatment</li>
             <li>Pigmentation & Melasma</li>
             <li>Laser Hair Removal</li>
@@ -66,7 +66,7 @@ export default function AboutDoctor() {
 
           <a
             href="tel:7687077077"
-            className="inline-flex items-center gap-3 px-8 py-3 bg-blue-700 text-white rounded-lg shadow hover:bg-blue-800 transition"
+            className="inline-flex items-center gap-3 px-8 py-3 bg-primary text-white rounded-lg shadow hover:bg-primaryLight transition"
           >
             <FaPhoneAlt /> Book Appointment
           </a>
