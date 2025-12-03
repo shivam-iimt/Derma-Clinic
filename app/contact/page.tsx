@@ -1,5 +1,10 @@
 "use client";
-
+// export const metadata = {
+//   title: "Contact Pt. Yadram Skin Clinic – Dermatologist in Yamuna Vihar",
+//   description:
+//     "Book an appointment with Pt. Yadram Skin Clinic. View address, phone number, WhatsApp and clinic timings.",
+// };
+  
 import {
   FaPhoneAlt,
   FaWhatsapp,
@@ -43,15 +48,11 @@ export default function ContactPage() {
             <ul className="text-gray-700 space-y-2">
               <li className="flex items-center gap-3">
                 <FaClock className="text-blue-700" />
-                Mon, Tue, Thu: 1:00 PM – 2:00 PM, 5:00 PM – 8:30 PM
+                Mon-Sat: 5:00 PM – 8:30 PM
               </li>
               <li className="flex items-center gap-3">
                 <FaClock className="text-blue-700" />
-                Wed, Fri, Sat: 5:00 PM – 8:30 PM
-              </li>
-              <li className="flex items-center gap-3">
-                <FaClock className="text-blue-700" />
-                Sunday: Closed
+                Sunday: 10:00 AM – 12:00 PM
               </li>
             </ul>
           </div>

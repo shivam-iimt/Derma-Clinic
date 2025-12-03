@@ -49,9 +49,8 @@ export default function ContactSection() {
                   Clinic Timings
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Mon, Tue, Thu: 1:00 PM – 2:00 PM, 5:00 PM – 8:30 PM <br />
-                  Wed, Fri, Sat: 5:00 PM – 8:30 PM <br />
-                  Sunday: Closed
+                  Mon-Sat: 5:00 PM – 8:30 PM <br />
+                  Sunday: 10:00 AM – 12:00 PM
                 </p>
               </div>
             </div>

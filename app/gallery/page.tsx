@@ -1,5 +1,10 @@
 "use client";
-
+export const metadata = {
+  title: "Clinic Gallery – Pt. Yadram Skin Clinic",
+  description:
+    "View before/after results, clinic photos, laser machines and dermatology treatment results at Pt. Yadram Skin Clinic.",
+};
+  
 import Image from "next/image";
 import { motion } from "framer-motion";
 
