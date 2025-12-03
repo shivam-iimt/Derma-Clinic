@@ -1,4 +1,25 @@
 "use client";
+export const metadata = {
+  title: "Acne Treatment in Yamuna Vihar – Dr. Koshinder Vats",
+  description:
+    "Get clear, acne-free skin with advanced acne treatments by Dr. Koshinder Vats at Pt. Yadram Skin Clinic, Yamuna Vihar. Safe, effective & personalized care.",
+};
+
+export const dynamic = "force-static";
+
+export const schema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalProcedure",
+  name: "Acne Treatment",
+  medicalSpecialty: "Dermatology",
+  description:
+    "Advanced acne treatment offered at Pt. Yadram Skin Clinic using peels, medications, laser & personalized plans.",
+  url: "https://your-domain.com/treatments/acne",
+  provider: {
+    "@type": "Physician",
+    name: "Dr. Koshinder Vats",
+  },
+};
 
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -16,7 +37,7 @@ export default function AcneTreatmentPage() {
       <section className="max-w-7xl mx-auto px-6 py-20">
         {/* TOP SECTION */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* LEFT IMAGE */}
+          {/* IMAGE */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -31,7 +52,7 @@ export default function AcneTreatmentPage() {
             />
           </motion.div>
 
-          {/* RIGHT TEXT */}
+          {/* TEXT */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -44,16 +65,14 @@ export default function AcneTreatmentPage() {
 
             <p className="text-gray-700 text-lg leading-relaxed">
               At Pt. Yadram Skin Clinic,{" "}
-              <strong>Dr. Koshinder Vats (MBBS, MD)</strong>
-              provides advanced acne treatment designed to reduce pimples,
-              inflammation, blackheads, whiteheads, and prevent future
-              breakouts.
+              <strong>Dr. Koshinder Vats (MBBS, MD)</strong> provides advanced
+              acne treatment designed to reduce pimples, inflammation,
+              blackheads, and prevent future breakouts.
             </p>
 
             <p className="text-gray-700 text-lg leading-relaxed">
               Every patient gets a personalised treatment plan based on skin
-              type, severity of acne and lifestyle habits to achieve
-              long-lasting results.
+              type and severity for long-lasting results.
             </p>
 
             <a
@@ -65,36 +84,29 @@ export default function AcneTreatmentPage() {
           </motion.div>
         </div>
 
-        {/* CAUSES OF ACNE */}
+        {/* CAUSES */}
         <div className="mt-20">
           <h3 className="text-2xl font-bold text-gray-900 mb-6">
             Causes of Acne
           </h3>
 
           <ul className="space-y-3 text-gray-700 text-lg">
-            <li className="flex gap-2">
-              <FaCheckCircle className="text-blue-700" /> Excess oil production
-            </li>
-            <li className="flex gap-2">
-              <FaCheckCircle className="text-blue-700" /> Blocked pores
-            </li>
-            <li className="flex gap-2">
-              <FaCheckCircle className="text-blue-700" /> Bacterial infection
-            </li>
-            <li className="flex gap-2">
-              <FaCheckCircle className="text-blue-700" /> Hormonal imbalance
-            </li>
-            <li className="flex gap-2">
-              <FaCheckCircle className="text-blue-700" /> Pollution & stress
-            </li>
-            <li className="flex gap-2">
-              <FaCheckCircle className="text-blue-700" /> Wrong skincare
-              products
-            </li>
+            {[
+              "Excess oil production",
+              "Blocked pores",
+              "Bacterial infection",
+              "Hormonal imbalance",
+              "Pollution & stress",
+              "Wrong skincare products",
+            ].map((item, idx) => (
+              <li key={idx} className="flex gap-2">
+                <FaCheckCircle className="text-blue-700" /> {item}
+              </li>
+            ))}
           </ul>
         </div>
 
-        {/* TREATMENT OPTIONS */}
+        {/* TREATMENTS */}
         <div className="mt-20">
           <h3 className="text-2xl font-bold text-gray-900 mb-6">
             Treatments We Offer
@@ -103,13 +115,12 @@ export default function AcneTreatmentPage() {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               "Medical treatment for acne",
-              "Chemical peels for acne & blemishes",
+              "Chemical peels",
               "Comedone extraction",
-              "Acne control medications",
-              "Salicylic peel / Glycolic peel",
-              "Anti-inflammatory procedures",
-              "Sebum control therapies",
-              "Diet & lifestyle guidance",
+              "Anti-acne medications",
+              "Salicylic/Glycolic peels",
+              "Sebum control therapy",
+              "Lifestyle & diet planning",
             ].map((item, idx) => (
               <div
                 key={idx}
@@ -122,7 +133,7 @@ export default function AcneTreatmentPage() {
           </div>
         </div>
 
-        {/* BEFORE AFTER GALLERY */}
+        {/* BEFORE AFTER */}
         <div className="mt-20">
           <h3 className="text-2xl font-bold text-gray-900 mb-6">
             Before & After Results
@@ -137,7 +148,6 @@ export default function AcneTreatmentPage() {
                 className="object-cover"
               />
             </div>
-
             <div className="relative w-full h-[300px] rounded-xl overflow-hidden shadow-lg">
               <Image
                 src="/acne-after.jpg"
@@ -149,37 +159,6 @@ export default function AcneTreatmentPage() {
           </div>
         </div>
 
-        {/* WHY CHOOSE US */}
-        <div className="mt-20">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6">
-            Why Choose Dr. Koshinder Vats for Acne Treatment?
-          </h3>
-
-          <ul className="space-y-3 text-gray-700 text-lg">
-            <li className="flex gap-2">
-              <FaCheckCircle className="text-blue-700" /> 10+ years of
-              dermatology experience
-            </li>
-            <li className="flex gap-2">
-              <FaCheckCircle className="text-blue-700" /> Personalised acne
-              treatment plans
-            </li>
-            <li className="flex gap-2">
-              <FaCheckCircle className="text-blue-700" /> US-FDA approved
-              technologies
-            </li>
-            <li className="flex gap-2">
-              <FaCheckCircle className="text-blue-700" /> Safe and effective
-              results
-            </li>
-            <li className="flex gap-2">
-              <FaCheckCircle className="text-blue-700" /> Visible improvement in
-              2–4 weeks
-            </li>
-          </ul>
-        </div>
-
-        {/* CTA SECTION */}
         <div className="mt-20 text-center">
           <a
             href="tel:7687077077"
@@ -189,6 +168,10 @@ export default function AcneTreatmentPage() {
           </a>
         </div>
       </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
     </main>
   );
 }

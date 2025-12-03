@@ -1,4 +1,21 @@
 "use client";
+export const metadata = {
+  title: "Anti-Aging Treatment in Yamuna Vihar – Wrinkle Reduction",
+  description:
+    "Rejuvenate your skin with anti-aging solutions including lasers, peels & facials.",
+};
+export const dynamic = "force-static";
+
+export const schema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalProcedure",
+  name: "Anti-Aging Treatment",
+  medicalSpecialty: "Dermatology",
+  description:
+    "Wrinkle reduction, skin tightening, and rejuvenation with anti-aging dermatology treatments.",
+  url: "https://your-domain.com/treatments/anti-aging",
+  provider: { "@type": "Physician", name: "Dr. Koshinder Vats" },
+};
 
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -211,6 +228,10 @@ export default function AntiAgingTreatmentPage() {
           </a>
         </div>
       </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
     </main>
   );
 }

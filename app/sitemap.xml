@@ -1,0 +1,37 @@
+export default async function sitemap() {
+  return [
+    {
+      url: "https://your-domain.com",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://your-domain.com/about",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://your-domain.com/contact",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://your-domain.com/gallery",
+      lastModified: new Date(),
+    },
+    ...[
+      "acne",
+      "acne-scar",
+      "pigmentation",
+      "chemical-peel",
+      "carbon-peel",
+      "hydra-facial",
+      "laser-hair-removal",
+      "hair-fall",
+      "prp",
+      "gfc",
+      "mole-wart-removal",
+      "anti-aging",
+    ].map((page) => ({
+      url: `https://your-domain.com/treatments/${page}`,
+      lastModified: new Date(),
+    })),
+  ];
+}
