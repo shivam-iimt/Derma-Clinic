@@ -24,7 +24,7 @@ export default function GfcTreatmentPage() {
             className="relative w-full h-[350px] rounded-xl overflow-hidden shadow-lg"
           >
             <Image
-              src="/gfc-treatment.jpg"
+              src="/acne-scar-removal.jpg"
               alt="GFC Treatment"
               fill
               className="object-cover"
@@ -131,7 +131,7 @@ export default function GfcTreatmentPage() {
           <div className="grid md:grid-cols-2 gap-10">
             <div className="relative w-full h-[300px] rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/gfc-before.jpg"
+                src="/acne-scar-removal.jpg"
                 alt="GFC Before"
                 fill
                 className="object-cover"
@@ -140,7 +140,7 @@ export default function GfcTreatmentPage() {
 
             <div className="relative w-full h-[300px] rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/gfc-after.jpg"
+                src="/acne-scar-removal.jpg"
                 alt="GFC After"
                 fill
                 className="object-cover"
@@ -206,7 +206,6 @@ export default function GfcTreatmentPage() {
           </a>
         </div>
       </section>
-
     </main>
   );
 }

@@ -24,7 +24,7 @@ export default function AntiAgingTreatmentPage() {
             className="relative w-full h-[350px] rounded-xl overflow-hidden shadow-lg"
           >
             <Image
-              src="/anti-aging.jpg"
+              src="/acne-scar-removal.jpg"
               alt="Anti-Aging Treatment"
               fill
               className="object-cover"
@@ -138,19 +138,21 @@ export default function AntiAgingTreatmentPage() {
           </h3>
 
           <div className="grid md:grid-cols-2 gap-10">
-            {["antiaging-before.jpg", "antiaging-after.jpg"].map((img, idx) => (
-              <div
-                key={idx}
-                className="relative w-full h-[300px] rounded-xl overflow-hidden shadow-lg"
-              >
-                <Image
-                  src={`/${img}`}
-                  alt={idx === 0 ? "Before" : "After"}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            ))}
+            {["acne-scar-removal.jpg", "acne-scar-removal.jpg"].map(
+              (img, idx) => (
+                <div
+                  key={idx}
+                  className="relative w-full h-[300px] rounded-xl overflow-hidden shadow-lg"
+                >
+                  <Image
+                    src={`/${img}`}
+                    alt={idx === 0 ? "Before" : "After"}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              )
+            )}
           </div>
         </div>
 

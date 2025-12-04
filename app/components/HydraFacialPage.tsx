@@ -27,7 +27,7 @@ export default function HydraFacialPage() {
             className="relative w-full h-[350px] rounded-xl overflow-hidden shadow-lg"
           >
             <Image
-              src="/hydra-facial.jpg"
+              src="/acne-scar-removal.jpg"
               alt="Hydra Facial"
               fill
               className="object-cover"
@@ -126,7 +126,7 @@ export default function HydraFacialPage() {
           <div className="grid md:grid-cols-2 gap-10">
             <div className="relative w-full h-[300px] rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/hydra-before.jpg"
+                src="/acne-scar-removal.jpg"
                 alt="Hydra Facial Before"
                 fill
                 className="object-cover"
@@ -135,7 +135,7 @@ export default function HydraFacialPage() {
 
             <div className="relative w-full h-[300px] rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/hydra-after.jpg"
+                src="/acne-scar-removal.jpg"
                 alt="Hydra Facial After"
                 fill
                 className="object-cover"
@@ -175,7 +175,6 @@ export default function HydraFacialPage() {
           </a>
         </div>
       </section>
-
     </main>
   );
 }

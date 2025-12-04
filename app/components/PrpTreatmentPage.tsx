@@ -24,7 +24,7 @@ export default function PrpTreatmentPage() {
             className="relative w-full h-[350px] rounded-xl overflow-hidden shadow-lg"
           >
             <Image
-              src="/prp-treatment.jpg"
+              src="/acne-scar-removal.jpg"
               alt="PRP Hair Treatment"
               fill
               className="object-cover"
@@ -132,7 +132,7 @@ export default function PrpTreatmentPage() {
           <div className="grid md:grid-cols-2 gap-10">
             <div className="relative w-full h-[300px] rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/prp-before.jpg"
+                src="/acne-scar-removal.jpg"
                 alt="PRP Before"
                 fill
                 className="object-cover"
@@ -141,7 +141,7 @@ export default function PrpTreatmentPage() {
 
             <div className="relative w-full h-[300px] rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/prp-after.jpg"
+                src="/acne-scar-removal.jpg"
                 alt="PRP After"
                 fill
                 className="object-cover"

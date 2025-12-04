@@ -24,7 +24,7 @@ export default function AcneTreatmentPage() {
             className="relative w-full h-[350px] rounded-xl overflow-hidden shadow-lg"
           >
             <Image
-              src="/acne-treatment.jpg"
+              src="/acne-scar-removal.jpg"
               alt="Acne Treatment"
               fill
               className="object-cover"
@@ -121,7 +121,7 @@ export default function AcneTreatmentPage() {
           <div className="grid md:grid-cols-2 gap-10">
             <div className="relative w-full h-[300px] rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/acne-before.jpg"
+                src="/acne-scar-removal.jpg"
                 alt="Before"
                 fill
                 className="object-cover"
@@ -129,7 +129,7 @@ export default function AcneTreatmentPage() {
             </div>
             <div className="relative w-full h-[300px] rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/acne-after.jpg"
+                src="/acne-scar-removal.jpg"
                 alt="After"
                 fill
                 className="object-cover"
@@ -148,8 +148,6 @@ export default function AcneTreatmentPage() {
           </a>
         </div>
       </section>
-
-      
     </main>
   );
 }

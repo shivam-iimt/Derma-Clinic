@@ -24,7 +24,7 @@ export default function HairFallTreatmentPage() {
             className="relative w-full h-[350px] rounded-xl overflow-hidden shadow-lg"
           >
             <Image
-              src="/hair-fall-treatment.jpg"
+              src="/acne-scar-removal.jpg"
               alt="Hair Fall Treatment"
               fill
               className="object-cover"
@@ -124,7 +124,7 @@ export default function HairFallTreatmentPage() {
           <div className="grid md:grid-cols-2 gap-10">
             <div className="relative w-full h-[300px] rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/hairfall-before.jpg"
+                src="/acne-scar-removal.jpg"
                 alt="Before"
                 fill
                 className="object-cover"
@@ -133,7 +133,7 @@ export default function HairFallTreatmentPage() {
 
             <div className="relative w-full h-[300px] rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/hairfall-after.jpg"
+                src="/acne-scar-removal.jpg"
                 alt="After"
                 fill
                 className="object-cover"

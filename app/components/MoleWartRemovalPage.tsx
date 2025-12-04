@@ -25,7 +25,7 @@ export default function MoleWartRemovalPage() {
             className="relative w-full h-[350px] rounded-xl overflow-hidden shadow-lg"
           >
             <Image
-              src="/mole-removal.jpg"
+              src="/acne-scar-removal.jpg"
               alt="Mole Removal"
               fill
               className="object-cover"
@@ -124,7 +124,7 @@ export default function MoleWartRemovalPage() {
           <div className="grid md:grid-cols-2 gap-10">
             <div className="relative w-full h-[300px] rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/mole-before.jpg"
+                src="/acne-scar-removal.jpg"
                 alt="Before"
                 fill
                 className="object-cover"
@@ -133,7 +133,7 @@ export default function MoleWartRemovalPage() {
 
             <div className="relative w-full h-[300px] rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/mole-after.jpg"
+                src="/acne-scar-removal.jpg"
                 alt="After"
                 fill
                 className="object-cover"

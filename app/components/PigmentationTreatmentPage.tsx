@@ -26,7 +26,7 @@ export default function PigmentationTreatmentPage() {
             className="relative w-full h-[350px] rounded-xl overflow-hidden shadow-lg"
           >
             <Image
-              src="/pigmentation-treatment.jpg"
+              src="/acne-scar-removal.jpg"
               alt="Pigmentation Treatment"
               fill
               className="object-cover"
@@ -149,7 +149,7 @@ export default function PigmentationTreatmentPage() {
           <div className="grid md:grid-cols-2 gap-10">
             <div className="relative w-full h-[300px] rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/pigmentation-before.jpg"
+                src="/acne-scar-removal.jpg"
                 alt="Pigmentation Before"
                 fill
                 className="object-cover"
@@ -158,7 +158,7 @@ export default function PigmentationTreatmentPage() {
 
             <div className="relative w-full h-[300px] rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/pigmentation-after.jpg"
+                src="/acne-scar-removal.jpg"
                 alt="Pigmentation After"
                 fill
                 className="object-cover"

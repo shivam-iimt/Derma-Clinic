@@ -25,7 +25,7 @@ export default function CarbonPeelPage() {
             className="relative w-full h-[350px] rounded-xl overflow-hidden shadow-lg"
           >
             <Image
-              src="/carbon-peel.jpg"
+              src="/acne-scar-removal.jpg"
               alt="Carbon Peel Treatment"
               fill
               className="object-cover"
@@ -122,7 +122,7 @@ export default function CarbonPeelPage() {
           </h3>
 
           <div className="grid md:grid-cols-2 gap-10">
-            {["carbon-before.jpg", "carbon-after.jpg"].map((img, idx) => (
+            {["acne-scar-removal.jpg", "acne-scar-removal.jpg"].map((img, idx) => (
               <div
                 key={idx}
                 className="relative w-full h-[300px] rounded-xl overflow-hidden shadow-lg"

@@ -24,7 +24,7 @@ export default function LaserHairRemovalPage() {
             className="relative w-full h-[350px] rounded-xl overflow-hidden shadow-lg"
           >
             <Image
-              src="/laser-treatment.jpg"
+              src="/acne-scar-removal.jpg"
               alt="Laser Hair Removal"
               fill
               className="object-cover"
@@ -145,7 +145,7 @@ export default function LaserHairRemovalPage() {
           <div className="grid md:grid-cols-2 gap-10">
             <div className="relative w-full h-[300px] rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/laser-before.jpg"
+                src="/acne-scar-removal.jpg"
                 alt="Before"
                 fill
                 className="object-cover"
@@ -154,7 +154,7 @@ export default function LaserHairRemovalPage() {
 
             <div className="relative w-full h-[300px] rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/laser-after.jpg"
+                src="/acne-scar-removal.jpg"
                 alt="After"
                 fill
                 className="object-cover"
@@ -173,7 +173,6 @@ export default function LaserHairRemovalPage() {
           </a>
         </div>
       </section>
-
     </main>
   );
 }
