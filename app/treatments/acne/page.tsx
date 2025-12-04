@@ -19,7 +19,7 @@ export const schema = {
   },
 };
 
-import AcneTreatmentPage from "./AcneTreatmentPage";
+import AcneTreatmentPage from "../../components/AcneTreatmentPage";
 
 export default function Page() {
   return (

@@ -19,7 +19,7 @@ export const schema = {
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaCheckCircle, FaPhoneAlt } from "react-icons/fa";
-import HydraFacialPage from "./HydraFacialPage";
+import HydraFacialPage from "../../components/HydraFacialPage";
 
 export default function Page() {
   return (

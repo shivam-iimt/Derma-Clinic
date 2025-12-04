@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar";
+import Navbar from "./common-components/Navbar";
 import Footer from "./sections/Footer";
-import WhatsAppButton from "./components/WhatsappButton";
+import WhatsAppButton from "./common-components/WhatsappButton";
 import { Poppins } from "next/font/google";
 
 const poppins = Poppins({

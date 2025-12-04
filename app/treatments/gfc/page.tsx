@@ -16,7 +16,7 @@ export const schema = {
   provider: { "@type": "Physician", name: "Dr. Koshinder Vats" },
 };
 
-import GfcTreatmentPage from "./GfcTreatmentPage";
+import GfcTreatmentPage from "../../components/GfcTreatmentPage";
 
 export default function Page() {
   return (

@@ -15,7 +15,7 @@ export const schema = {
   provider: { "@type": "Physician", name: "Dr. Koshinder Vats" },
 };
 
-import CarbonPeelPage from "./CarbonPeelPage";
+import CarbonPeelPage from "../../components/CarbonPeelPage";
 
 export default function Page() {
   return (

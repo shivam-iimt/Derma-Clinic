@@ -1,4 +1,4 @@
-import TreatmentsPage from "./TreatmentPage";
+import TreatmentsPage from "../components/TreatmentPage";
 
 export const metadata = {
   title: "Treatments – Pt. Yadram Skin Clinic",

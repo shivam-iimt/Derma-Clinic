@@ -15,7 +15,7 @@ export const schema = {
   url: "https://your-domain.com/treatments/prp-hair-treatment",
   provider: { "@type": "Physician", name: "Dr. Koshinder Vats" },
 };
-import PrpTreatmentPage from "./PrpTreatmentPage";
+import PrpTreatmentPage from "../../components/PrpTreatmentPage";
 
 export default function Page() {
   return (

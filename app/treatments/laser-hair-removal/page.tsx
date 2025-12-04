@@ -16,7 +16,7 @@ export const schema = {
   provider: { "@type": "Physician", name: "Dr. Koshinder Vats" },
 };
 
-import LaserHairRemovalPage from "./LaserHairRemovalPage";
+import LaserHairRemovalPage from "../../components/LaserHairRemovalPage";
 
 export default function Page() {
   return (

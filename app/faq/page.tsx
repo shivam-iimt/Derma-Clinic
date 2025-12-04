@@ -1,4 +1,4 @@
-import FaqPage from "./FaqPage";
+import FaqPage from "../components/FaqPage";
 
 export const metadata = {
   title: "FAQs – Pt. Yadram Skin Clinic",
