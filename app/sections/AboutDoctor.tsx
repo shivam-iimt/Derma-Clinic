@@ -10,23 +10,6 @@ export default function AboutDoctor() {
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
         {/* LEFT — Doctor Photo */}
         <motion.div
-          initial={{ opacity: 0, x: -40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <div className="relative w-full h-[420px] rounded-2xl overflow-hidden shadow-xl">
-            <Image
-              src="/doctor-placeholder.jpg"
-              alt="Dr. Koshinder Vats"
-              fill
-              className="object-cover"
-            />
-          </div>
-        </motion.div>
-
-        {/* RIGHT — Text Content */}
-        <motion.div
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -71,6 +54,22 @@ export default function AboutDoctor() {
             <FaPhoneAlt /> Book Appointment
           </a>
         </motion.div>
+        {/* RIGHT — Text Content */}
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <div className="relative w-full h-[420px] rounded-2xl overflow-hidden shadow-xl">
+            <Image
+              src="/skin-specialist-yamuna-vihar.jpg"
+              alt="Dr. Koshinder Vats"
+              fill
+              className="object-cover"
+            />
+          </div>
+        </motion.div>{" "}
       </div>
     </section>
   );

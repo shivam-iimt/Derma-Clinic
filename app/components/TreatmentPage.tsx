@@ -1,19 +1,49 @@
 "use client";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 const treatments = [
-  { name: "Acne Treatment", slug: "acne" },
-  { name: "Acne Scar Removal", slug: "acne-scar-removal" },
-  { name: "Pigmentation Treatment", slug: "pigmentation" },
-  { name: "Chemical Peel", slug: "chemical-peel" },
-  { name: "Carbon Peel", slug: "carbon-peel" },
-  { name: "Hydra Facial", slug: "hydra-facial" },
-  { name: "Laser Hair Removal", slug: "laser-hair-removal" },
-  { name: "Hair Fall Treatment", slug: "hair-fall-treatment" },
-  { name: "PRP Hair Treatment", slug: "prp-hair-treatment" },
-  { name: "GFC Hair Treatment", slug: "gfc-hair-treatment" },
-  { name: "Mole & Wart Removal", slug: "mole-wart-removal" },
-  { name: "Anti-Aging Treatment", slug: "anti-aging" },
+  { name: "Acne Treatment", img: "/acne-scar-removal.jpg", slug: "acne" },
+  {
+    name: "Acne Scar Removal",
+    img: "/acne-scar-removal.jpg",
+    slug: "acne-scar",
+  },
+  {
+    name: "Pigmentation Treatment",
+    img: "/acne-scar-removal.jpg",
+    slug: "pigmentation",
+  },
+  {
+    name: "Chemical Peel",
+    img: "/acne-scar-removal.jpg",
+    slug: "chemical-peel",
+  },
+  { name: "Carbon Peel", img: "/acne-scar-removal.jpg", slug: "carbon-peel" },
+  { name: "Hydra Facial", img: "/acne-scar-removal.jpg", slug: "hydra-facial" },
+  {
+    name: "Laser Hair Removal",
+    img: "/acne-scar-removal.jpg",
+    slug: "laser-hair-removal",
+  },
+  {
+    name: "Hair Fall Treatment",
+    img: "/acne-scar-removal.jpg",
+    slug: "hair-fall",
+  },
+  { name: "PRP Hair Treatment", img: "/acne-scar-removal.jpg", slug: "prp" },
+  { name: "GFC Hair Treatment", img: "/acne-scar-removal.jpg", slug: "gfc" },
+  {
+    name: "Mole & Wart Removal",
+    img: "/acne-scar-removal.jpg",
+    slug: "mole-wart-removal",
+  },
+  {
+    name: "Anti-Aging Treatment",
+    img: "/acne-scar-removal.jpg",
+    slug: "anti-aging",
+  },
 ];
 
 export default function TreatmentsPage() {
@@ -24,14 +54,28 @@ export default function TreatmentsPage() {
       </h1>
 
       <div className="grid md:grid-cols-3 gap-6 mt-14">
-        {treatments.map((t) => (
-          <Link
-            key={t.slug}
-            href={`/treatments/${t.slug}`}
-            className="p-6 bg-primaryBg rounded-xl shadow border 
-                       hover:shadow-lg hover:-translate-y-1 transition-all"
-          >
-            <h3 className="text-xl font-semibold text-primary">{t.name}</h3>
+        {treatments.map((t, idx) => (
+          <Link key={t.slug} href={`/treatments/${t.slug}`} className=" ">
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: idx * 0.15 }}
+              className="bg-primaryBg rounded-2xl shadow-md hover:shadow-xl transition cursor-pointer border border-primary/20 overflow-hidden"
+            >
+              {/* IMAGE */}
+              <div className="relative w-full h-56">
+                <Image src={t.img} alt={t.name} fill className="object-cover" />
+              </div>
+
+              {/* CONTENT */}
+              <div className="p-6 space-y-4">
+                <h3 className="text-xl font-semibold text-textDark">
+                  {t.name}
+                </h3>
+              </div>
+            </motion.div>
           </Link>
         ))}
       </div>

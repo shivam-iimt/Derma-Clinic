@@ -9,6 +9,19 @@ export default function Hero() {
     <section className="w-full py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center">
         {/* LEFT SIDE */}
+        <div className="flex-1 mt-10 md:mt-0 flex justify-center">
+          <div className="w-[260px] h-[330px] relative rounded-2xl overflow-hidden ">
+            <Image
+              src="/dr-koshinder-vats-dermatologist.jpg"
+              alt="Doctor"
+              fill
+              sizes="100%"
+              className="object-cover"
+            />
+          </div>
+        </div>
+
+        {/* RIGHT SIDE */}
         <div className="flex-1 space-y-6">
           <h1 className="text-4xl md:text-5xl font-bold text-primary leading-tight">
             Pt. Yadram Skin Clinic
@@ -41,24 +54,12 @@ export default function Hero() {
             </a>
 
             <a
-              href="https://maps.app.goo.gl/xxxxxxx"
+              href="https://www.google.com/maps/place/Dr.+Koshinder+Vats's+Pt+Yadram+Skin+Clinic+,+Laser+and+Hair+Transplant+Centre/@28.7020547,77.2736917,17z/data=!3m1!4b1!4m6!3m5!1s0x390cfd66fbd2dc03:0xc477f6559ed49e46!8m2!3d28.7020547!4d77.2762666!16s%2Fg%2F11sms1hklx?entry=ttu&g_ep=EgoyMDI1MTIwMS4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               className="px-6 py-3 bg-primaryBg text-textDark rounded-lg border border-primary/30 flex items-center gap-2 hover:bg-primary/10 transition"
             >
               <MdLocationPin /> Directions
             </a>
-          </div>
-        </div>
-
-        {/* RIGHT SIDE */}
-        <div className="flex-1 mt-10 md:mt-0 flex justify-center">
-          <div className="w-[260px] h-[330px] relative rounded-2xl overflow-hidden shadow-lg border border-primary/20">
-            <Image
-              src="/doctor-placeholder.jpg"
-              alt="Doctor"
-              fill
-              className="object-cover"
-            />
           </div>
         </div>
       </div>

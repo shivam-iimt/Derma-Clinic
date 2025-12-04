@@ -23,7 +23,7 @@ export default function AboutPage() {
             className="relative w-full h-[380px] rounded-xl overflow-hidden shadow-lg"
           >
             <Image
-              src="/doctor.jpg"
+              src="/skin-specialist-yamuna-vihar.jpg"
               alt="Dr. Koshinder Vats"
               fill
               className="object-cover"

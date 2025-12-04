@@ -4,12 +4,12 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const galleryImages = [
-  "/clinic1.jpg",
-  "/clinic2.jpg",
-  "/clinic3.jpg",
-  "/clinic4.jpg",
-  "/clinic5.jpg",
-  "/clinic6.jpg",
+  "/laser-hair-removal.jpg",
+  "/laser-hair-removal.jpg",
+  "/laser-hair-removal.jpg",
+  "/laser-hair-removal.jpg",
+  "/laser-hair-removal.jpg",
+  "/laser-hair-removal.jpg",
 ];
 
 export default function ClinicGallery() {

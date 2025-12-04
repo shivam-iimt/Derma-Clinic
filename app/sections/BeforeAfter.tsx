@@ -6,9 +6,9 @@ import { Navigation, Pagination } from "swiper/modules";
 import { motion } from "framer-motion";
 
 const beforeAfterImages = [
-  { before: "/before1.jpg", after: "/after1.jpg" },
-  { before: "/before2.jpg", after: "/after2.jpg" },
-  { before: "/before3.jpg", after: "/after3.jpg" },
+  { before: "/laser-hair-removal.jpg", after: "/laser-hair-removal.jpg" },
+  { before: "/laser-hair-removal.jpg", after: "/laser-hair-removal.jpg" },
+  { before: "/laser-hair-removal.jpg", after: "/laser-hair-removal.jpg" },
 ];
 
 export default function BeforeAfter() {

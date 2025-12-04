@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import {
   FaSun,
   FaUserMd,
@@ -16,32 +17,73 @@ import {
   MdOutlineHealthAndSafety,
 } from "react-icons/md";
 
-// ❗ Updated icon color → theme primary
+// Icon + colors
 const iconClass = "text-primary text-4xl";
-
-// Updated colors for theme
 const cardHeading = "text-textDark";
 const cardBg = "bg-primaryBg";
 
+// SAME SLUGS AS MAIN PAGE
 const treatments = [
-  { name: "Acne Treatment", icon: <MdFace className={iconClass} /> },
-  { name: "Acne Scar Reduction", icon: <MdHealing className={iconClass} /> },
-  { name: "Pigmentation & Melasma", icon: <FaSun className={iconClass} /> },
-  { name: "Laser Hair Removal", icon: <FaMagic className={iconClass} /> },
-  { name: "PRP Hair Growth", icon: <FaSyringe className={iconClass} /> },
   {
-    name: "GFC Hair Therapy",
-    icon: <MdOutlineScience className={iconClass} />,
+    name: "Acne Treatment",
+    slug: "acne",
+    icon: <MdFace className={iconClass} />,
+  },
+  {
+    name: "Acne Scar Removal",
+    slug: "acne-scar",
+    icon: <MdHealing className={iconClass} />,
+  },
+  {
+    name: "Pigmentation Treatment",
+    slug: "pigmentation",
+    icon: <FaSun className={iconClass} />,
   },
   {
     name: "Chemical Peel",
+    slug: "chemical-peel",
     icon: <MdOutlineHealthAndSafety className={iconClass} />,
   },
-  { name: "Carbon Peel", icon: <FaSpa className={iconClass} /> },
-  { name: "Hair Fall Treatment", icon: <FaHeart className={iconClass} /> },
-  { name: "Hydra Facial", icon: <FaSpa className={iconClass} /> },
-  { name: "Mole / Wart Removal", icon: <MdHealing className={iconClass} /> },
-  { name: "Anti-Aging Treatments", icon: <FaUserMd className={iconClass} /> },
+  {
+    name: "Carbon Peel",
+    slug: "carbon-peel",
+    icon: <FaSpa className={iconClass} />,
+  },
+  {
+    name: "Hydra Facial",
+    slug: "hydra-facial",
+    icon: <FaSpa className={iconClass} />,
+  },
+  {
+    name: "Laser Hair Removal",
+    slug: "laser-hair-removal",
+    icon: <FaMagic className={iconClass} />,
+  },
+  {
+    name: "Hair Fall Treatment",
+    slug: "hair-fall",
+    icon: <FaHeart className={iconClass} />,
+  },
+  {
+    name: "PRP Hair Treatment",
+    slug: "prp",
+    icon: <FaSyringe className={iconClass} />,
+  },
+  {
+    name: "GFC Hair Treatment",
+    slug: "gfc",
+    icon: <MdOutlineScience className={iconClass} />,
+  },
+  {
+    name: "Mole & Wart Removal",
+    slug: "mole-wart-removal",
+    icon: <MdHealing className={iconClass} />,
+  },
+  {
+    name: "Anti-Aging Treatment",
+    slug: "anti-aging",
+    icon: <FaUserMd className={iconClass} />,
+  },
 ];
 
 export default function TreatmentsGrid() {
@@ -62,20 +104,21 @@ export default function TreatmentsGrid() {
         {/* Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
           {treatments.map((item, idx) => (
-            <motion.div
-              key={idx}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.45, delay: idx * 0.05 }}
-              className={`${cardBg} shadow-sm rounded-xl p-6 flex flex-col items-center text-center 
-                         border hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer`}
-            >
-              {item.icon}
-              <h3 className={`mt-4 text-base font-semibold ${cardHeading}`}>
-                {item.name}
-              </h3>
-            </motion.div>
+            <Link key={item.slug} href={`/treatments/${item.slug}`}>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.45, delay: idx * 0.05 }}
+                className={`${cardBg} shadow-sm rounded-xl p-6 flex flex-col items-center text-center 
+                border hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer`}
+              >
+                {item.icon}
+                <h3 className={`mt-4 text-base font-semibold ${cardHeading}`}>
+                  {item.name}
+                </h3>
+              </motion.div>
+            </Link>
           ))}
         </div>
       </div>

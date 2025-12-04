@@ -8,19 +8,19 @@ const featured = [
   {
     title: "Laser Hair Removal",
     desc: "Safe, painless and long-lasting laser hair removal using advanced US-FDA approved technology.",
-    img: "/laser.jpg",
+    img: "/laser-hair-removal.jpg",
     phone: "tel:7687077077",
   },
   {
     title: "Acne & Acne Scar Treatment",
     desc: "Effective treatment for acne, pimples, and scars using peels, lasers, microneedling and modern dermatology care.",
-    img: "/acne.jpg",
+    img: "/acne-scar-removal.jpg",
     phone: "tel:7687077077",
   },
   {
     title: "PRP / GFC Hair Therapy",
     desc: "Advanced PRP and GFC therapy for hair fall control, hair regrowth and improved scalp health.",
-    img: "/prp.jpg",
+    img: "/prp-treatment.webp",
     phone: "tel:7687077077",
   },
 ];

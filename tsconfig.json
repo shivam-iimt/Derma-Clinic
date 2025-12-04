@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "app/treatments/hydra-facial"  ],
   "exclude": ["node_modules"]
 }
