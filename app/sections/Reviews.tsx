@@ -26,7 +26,7 @@ const reviews = [
 
 export default function Reviews() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-primaryBg">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <motion.h2
@@ -34,7 +34,7 @@ export default function Reviews() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-4xl font-bold text-blue-700 text-center mb-12"
+          className="text-3xl md:text-4xl font-bold text-primary text-center mb-12"
         >
           What Our Patients Say
         </motion.h2>
@@ -60,12 +60,12 @@ export default function Reviews() {
               </div>
 
               {/* Review Text */}
-              <p className="text-gray-700 mb-4 leading-relaxed text-sm">
+              <p className="text-textDark/80 mb-4 leading-relaxed text-sm">
                 {item.review}
               </p>
 
               {/* Name */}
-              <h3 className="font-semibold text-gray-900 text-sm">
+              <h3 className="font-semibold text-textDark text-sm">
                 — {item.name}
               </h3>
             </motion.div>

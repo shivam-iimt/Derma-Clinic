@@ -10,24 +10,24 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center">
         {/* LEFT SIDE */}
         <div className="flex-1 space-y-6">
-          <h1 className="text-4xl md:text-5xl font-bold text-blue-700 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold text-primary leading-tight">
             Pt. Yadram Skin Clinic
           </h1>
 
-          <h2 className="text-xl md:text-2xl font-semibold text-gray-800">
+          <h2 className="text-xl md:text-2xl font-semibold text-textDark">
             Dr. Koshinder Vats (MBBS, MD)
           </h2>
 
-          <p className="text-gray-600 text-lg max-w-lg">
+          <p className="text-textDark/70 text-lg max-w-lg">
             Advanced Dermatology, Skin & Hair Treatments in Yamuna Vihar using
             modern techniques & safe procedures.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex gap-4">
+          <div className="flex gap-4 flex-wrap">
             <a
               href="tel:7687077077"
-              className="px-6 py-3 bg-blue-700 text-white rounded-lg shadow hover:bg-blue-800 flex items-center gap-2"
+              className="px-6 py-3 bg-primary text-white rounded-lg shadow hover:bg-primaryLight flex items-center gap-2 transition"
             >
               <FaPhoneAlt /> Call Now
             </a>
@@ -35,7 +35,7 @@ export default function Hero() {
             <a
               href="https://wa.me/917687077077"
               target="_blank"
-              className="px-6 py-3 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 flex items-center gap-2"
+              className="px-6 py-3 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 flex items-center gap-2 transition"
             >
               <FaWhatsapp /> WhatsApp
             </a>
@@ -43,7 +43,7 @@ export default function Hero() {
             <a
               href="https://maps.app.goo.gl/xxxxxxx"
               target="_blank"
-              className="px-6 py-3 bg-gray-100 text-gray-700 rounded-lg border flex items-center gap-2"
+              className="px-6 py-3 bg-primaryBg text-textDark rounded-lg border border-primary/30 flex items-center gap-2 hover:bg-primary/10 transition"
             >
               <MdLocationPin /> Directions
             </a>
@@ -52,7 +52,7 @@ export default function Hero() {
 
         {/* RIGHT SIDE */}
         <div className="flex-1 mt-10 md:mt-0 flex justify-center">
-          <div className="w-[260px] h-[330px] relative rounded-2xl overflow-hidden shadow-lg">
+          <div className="w-[260px] h-[330px] relative rounded-2xl overflow-hidden shadow-lg border border-primary/20">
             <Image
               src="/doctor-placeholder.jpg"
               alt="Doctor"

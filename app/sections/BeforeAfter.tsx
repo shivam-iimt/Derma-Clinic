@@ -13,7 +13,7 @@ const beforeAfterImages = [
 
 export default function BeforeAfter() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-primaryBg">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <motion.h2
@@ -21,7 +21,7 @@ export default function BeforeAfter() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-bold text-blue-700 text-center mb-12"
+          className="text-3xl md:text-4xl font-bold text-primary text-center mb-12"
         >
           Before & After Results
         </motion.h2>
@@ -42,11 +42,12 @@ export default function BeforeAfter() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="flex flex-col md:flex-row gap-6 bg-white p-6 rounded-2xl shadow-lg"
+                className="flex flex-col md:flex-row gap-6 bg-white p-6 rounded-2xl 
+                           shadow-lg border border-primaryBg"
               >
                 {/* BEFORE */}
                 <div className="flex-1 text-center">
-                  <h3 className="font-semibold text-gray-600 mb-2">Before</h3>
+                  <h3 className="font-semibold text-textDark mb-2">Before</h3>
                   <div className="relative w-full h-64 rounded-xl overflow-hidden shadow-md">
                     <Image
                       src={item.before}
@@ -59,7 +60,7 @@ export default function BeforeAfter() {
 
                 {/* AFTER */}
                 <div className="flex-1 text-center">
-                  <h3 className="font-semibold text-gray-600 mb-2">After</h3>
+                  <h3 className="font-semibold text-textDark mb-2">After</h3>
                   <div className="relative w-full h-64 rounded-xl overflow-hidden shadow-md">
                     <Image
                       src={item.after}

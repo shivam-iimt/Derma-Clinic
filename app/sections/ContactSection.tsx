@@ -14,13 +14,13 @@ export default function ContactSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-bold text-blue-700 text-center mb-12"
+          className="text-3xl md:text-4xl font-bold text-primary text-center mb-12"
         >
           Contact & Location
         </motion.h2>
 
         <div className="grid md:grid-cols-2 gap-10 items-start">
-          {/* Left — Contact Info */}
+          {/* LEFT — Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -28,38 +28,38 @@ export default function ContactSection() {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            {/* Address */}
+            {/* ADDRESS */}
             <div className="flex items-start gap-4">
-              <MdLocationPin className="text-blue-700 text-4xl" />
+              <MdLocationPin className="text-primary text-4xl" />
               <div>
-                <h3 className="text-xl font-semibold text-gray-900">
+                <h3 className="text-xl font-semibold text-textDark">
                   Our Location
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-textDark/70">
                   Pt. Yadram Skin Clinic, Yamuna Vihar, Delhi – 110053
                 </p>
               </div>
             </div>
 
-            {/* Timings */}
+            {/* TIMINGS */}
             <div className="flex items-start gap-4">
-              <MdAccessTime className="text-blue-700 text-4xl" />
+              <MdAccessTime className="text-primary text-4xl" />
               <div>
-                <h3 className="text-xl font-semibold text-gray-900">
+                <h3 className="text-xl font-semibold text-textDark">
                   Clinic Timings
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Mon-Sat: 5:00 PM – 8:30 PM <br />
+                <p className="text-textDark/70 leading-relaxed">
+                  Mon–Sat: 5:00 PM – 8:30 PM <br />
                   Sunday: 10:00 AM – 12:00 PM
                 </p>
               </div>
             </div>
 
-            {/* Contact Buttons */}
+            {/* BUTTONS */}
             <div className="flex gap-4 mt-4">
               <a
                 href="tel:7687077077"
-                className="px-6 py-3 bg-blue-700 text-white rounded-lg shadow hover:bg-blue-800 flex items-center gap-2"
+                className="px-6 py-3 bg-primary text-white rounded-lg shadow hover:bg-primaryLight flex items-center gap-2"
               >
                 <FaPhoneAlt /> Call Now
               </a>
@@ -74,7 +74,7 @@ export default function ContactSection() {
             </div>
           </motion.div>
 
-          {/* Right — Google Map */}
+          {/* RIGHT — MAP */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -86,7 +86,7 @@ export default function ContactSection() {
               width="100%"
               height="350"
               loading="lazy"
-              className="rounded-2xl shadow-md border"
+              className="rounded-2xl shadow-md border border-primary/20"
             ></iframe>
           </motion.div>
         </div>

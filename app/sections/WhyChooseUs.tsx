@@ -12,27 +12,27 @@ import { MdMedicalServices } from "react-icons/md";
 
 const features = [
   {
-    icon: <FaUserMd className="text-blue-700 text-4xl" />,
+    icon: <FaUserMd className="text-primary text-4xl" />,
     title: "10+ Years Experience",
   },
   {
-    icon: <FaShieldAlt className="text-blue-700 text-4xl" />,
+    icon: <FaShieldAlt className="text-primary text-4xl" />,
     title: "US-FDA Approved Equipment",
   },
   {
-    icon: <FaCheckCircle className="text-blue-700 text-4xl" />,
+    icon: <FaCheckCircle className="text-primary text-4xl" />,
     title: "Safe & Hygienic Procedures",
   },
   {
-    icon: <MdMedicalServices className="text-blue-700 text-4xl" />,
+    icon: <MdMedicalServices className="text-primary text-4xl" />,
     title: "Personalised Treatments",
   },
   {
-    icon: <FaHeartbeat className="text-blue-700 text-4xl" />,
+    icon: <FaHeartbeat className="text-primary text-4xl" />,
     title: "Affordable & Effective Care",
   },
   {
-    icon: <FaSmileBeam className="text-blue-700 text-4xl" />,
+    icon: <FaSmileBeam className="text-primary text-4xl" />,
     title: "Thousands of Happy Patients",
   },
 ];
@@ -47,7 +47,7 @@ export default function WhyChooseUs() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-4xl font-bold text-blue-700 text-center mb-12"
+          className="text-3xl md:text-4xl font-bold text-primary text-center mb-12"
         >
           Why Choose Our Clinic?
         </motion.h2>
@@ -61,10 +61,10 @@ export default function WhyChooseUs() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="bg-gray-50 shadow-md rounded-xl p-8 flex flex-col items-center text-center border hover:shadow-lg transition"
+              className="bg-primaryBg shadow-md rounded-xl p-8 flex flex-col items-center text-center border hover:shadow-lg transition"
             >
               {item.icon}
-              <h3 className="mt-4 text-lg font-semibold text-gray-800">
+              <h3 className="mt-4 text-lg font-semibold text-textDark">
                 {item.title}
               </h3>
             </motion.div>

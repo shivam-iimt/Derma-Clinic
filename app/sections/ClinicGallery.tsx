@@ -22,7 +22,7 @@ export default function ClinicGallery() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-bold text-blue-700 text-center mb-12"
+          className="text-3xl md:text-4xl font-bold text-primary text-center mb-12"
         >
           Clinic Gallery
         </motion.h2>
@@ -36,7 +36,8 @@ export default function ClinicGallery() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: idx * 0.1 }}
-              className="relative w-full h-56 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition"
+              className="relative w-full h-56 rounded-xl overflow-hidden 
+                         shadow-md hover:shadow-xl transition border border-primaryBg"
             >
               <Image
                 src={img}

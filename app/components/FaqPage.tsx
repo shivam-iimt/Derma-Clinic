@@ -21,17 +21,19 @@ const faqs = [
 
 export default function FaqPage() {
   return (
-    <main className="max-w-5xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-heading text-center">FAQs</h1>
+    <main className="max-w-5xl mx-auto px-6 py-20 text-textDark">
+      {/* Heading */}
+      <h1 className="text-4xl font-bold text-primary text-center">FAQs</h1>
 
+      {/* FAQ Items */}
       <div className="mt-12 space-y-6">
         {faqs.map((f, i) => (
           <div
             key={i}
-            className="p-6 bg-gray-50 rounded-xl border border-gray-200 shadow"
+            className="p-6 bg-primaryBg rounded-xl border border-primary/20 shadow"
           >
-            <h3 className="text-xl font-semibold text-heading">{f.q}</h3>
-            <p className="mt-2 text-textLight">{f.a}</p>
+            <h3 className="text-xl font-semibold text-primary">{f.q}</h3>
+            <p className="mt-2 text-textDark/80">{f.a}</p>
           </div>
         ))}
       </div>

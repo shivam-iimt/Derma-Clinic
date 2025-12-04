@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 
 const treatments = [
@@ -19,7 +19,7 @@ const treatments = [
 export default function TreatmentsPage() {
   return (
     <main className="max-w-7xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900 text-center">
+      <h1 className="text-4xl font-bold text-primary text-center">
         Our Treatments
       </h1>
 
@@ -28,9 +28,10 @@ export default function TreatmentsPage() {
           <Link
             key={t.slug}
             href={`/treatments/${t.slug}`}
-            className="p-6 bg-white rounded-xl shadow border hover:shadow-lg transition"
+            className="p-6 bg-primaryBg rounded-xl shadow border 
+                       hover:shadow-lg hover:-translate-y-1 transition-all"
           >
-            <h3 className="text-xl font-semibold text-blue-700">{t.name}</h3>
+            <h3 className="text-xl font-semibold text-primary">{t.name}</h3>
           </Link>
         ))}
       </div>
